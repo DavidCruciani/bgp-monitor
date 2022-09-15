@@ -84,6 +84,6 @@ while True:
 
                 if not debug:
                     meta_dict = {}
-                    source = 'bgp_monitor'
+                    source = 'ail_bgp_monitor'
                     source_uuid = uuid
                     pyail.feed_json_item(json.dumps(js), meta_dict, source, source_uuid, 'utf-8')
