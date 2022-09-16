@@ -160,6 +160,12 @@ monitor.py --verbose
 monitor.py -pf 84.205.67.0/24 --verbose
 ```
 
+**Negation filter** to identify prefixes that are not uniquely under a given AS number.
+
+~~~shell
+monitor.py -af _3356 -pf 38.126.253.0/24
+~~~
+
 You can **filter many AS numbers and/or prefixes** in `etc/filter_file.cfg.sample` instead of using long command line:
 
 ```shell
